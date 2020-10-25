@@ -321,46 +321,227 @@
 
 .ImagenesProductos {
   display: grid;
-  grid-template-rows: 100px 100px 100px 100px;
-  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 240px;
+  grid-template-columns: 20% 20% 20% 35%;
   grid-column-gap: 17px;
   grid-row-gap: 16px;
-  grid-template-areas: "Imagenp1 Imagenp2 Imagenp3 Imagenp5" "Imagenp1 Imagenp4 Imagenp4 Imagenp6" "Imagenp7 Imagenp7 Imagenp8 Imagenp9" "Imagenp10 Imagenp10 Imagenp8 Imagenp11";
-  margin: 0 50px 20px 50px; }
+  grid-template-areas: "Imagen1 Imagen2 Imagen3 Imagen4" "Imagen1 Imagen5 Imagen5 Imagen6";
+  margin: 0 50px 20px 50px;
+  transition: 1s;
+  animation-duration: 3s;
+  animation-name: aparecer; }
 
-.ImagenesProductos--1 {
-  grid-area: Imagenp1;
-  justify-items: start; }
+.imagenesp--1 {
+  grid-area: Imagen1;
+  justify-items: center;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
 
-.ImagenesProductos--2 {
-  grid-area: Imagenp2; }
+.imagenesp--1:hover {
+  grid-area: Imagen1;
+  justify-items: center;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
 
-.ImagenesProductos--3 {
-  grid-area: Imagenp3; }
+.imagenesp--2 {
+  grid-area: Imagen2;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
 
-.ImagenesProductos--4 {
-  grid-area: Imagenp4; }
+.imagenesp--2:hover {
+  grid-area: Imagen2;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
 
-.ImagenesProductos--5 {
-  grid-area: Imagenp5; }
+.imagenesp--3 {
+  grid-area: Imagen3;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
 
-.ImagenesProductos--6 {
-  grid-area: Imagenp6; }
+.imagenesp--3:hover {
+  grid-area: Imagen3;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
 
-.ImagenesProductos--7 {
-  grid-area: Imagenp7; }
+.imagenesp--4 {
+  grid-area: Imagen4;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
 
-.ImagenesProductos--8 {
-  grid-area: Imagenp8; }
+.imagenesp--4:hover {
+  grid-area: Imagen4;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
 
-.ImagenesProductos--9 {
-  grid-area: Imagenp9; }
+.imagenesp--5 {
+  grid-area: Imagen5;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
 
-.ImagenesProductos--10 {
-  grid-area: Imagenp10; }
+.imagenesp--5:hover {
+  grid-area: Imagen5;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
 
-.ImagenesProductos--11 {
-  grid-area: Imagenp11; }
+.imagenesp--6 {
+  grid-area: Imagen6;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
+
+.imagenesp--6:hover {
+  grid-area: Imagen6;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+@keyframes un_efecto {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 1; }
+  50% {
+    width: 98%;
+    height: 98%;
+    opacity: 0.6; }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1; } }
+
+.ImagenesProductos2 {
+  display: grid;
+  grid-template-rows: 240px;
+  grid-template-columns: 35% 20% 20% 30%;
+  grid-column-gap: 17px;
+  grid-row-gap: 16px;
+  grid-template-areas: "Imagen10 Imagen8 Imagen9 Imagen7" "Imagen12 Imagen11 Imagen11 Imagen7";
+  margin: 0 50px 20px 50px;
+  transition: 1s;
+  animation-duration: 3s;
+  animation-name: aparecer; }
+
+.imagenesp--7 {
+  grid-area: Imagen7;
+  justify-items: center;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
+
+.imagenesp--7:hover {
+  grid-area: Imagen7;
+  justify-items: center;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+.imagenesp--8 {
+  grid-area: Imagen8;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
+
+.imagenesp--8:hover {
+  grid-area: Imagen8;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+.imagenesp--9 {
+  grid-area: Imagen9;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
+
+.imagenesp--9:hover {
+  grid-area: Imagen9;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+.imagenesp--10 {
+  grid-area: Imagen10;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
+
+.imagenesp--10:hover {
+  grid-area: Imagen10;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+.imagenesp--11 {
+  grid-area: Imagen11;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
+
+.imagenesp--11:hover {
+  grid-area: Imagen11;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+.imagenesp--12 {
+  grid-area: Imagen12;
+  border: solid 1px #D1D8F2;
+  transition: color height 1s width 1s; }
+
+.imagenesp--12:hover {
+  grid-area: Imagen12;
+  border: solid 1px #FCD4D2;
+  animation-name: un_efecto;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+  animation-delay: 0s; }
+
+@keyframes un_efecto {
+  0% {
+    width: 100%;
+    height: 100%;
+    opacity: 1; }
+  50% {
+    width: 98%;
+    height: 98%;
+    opacity: 0.6; }
+  100% {
+    width: 100%;
+    height: 100%;
+    opacity: 1; } }
 
 /*---------------SECCION INSPIRACION------------------------*/
 .citaInspiracion {
