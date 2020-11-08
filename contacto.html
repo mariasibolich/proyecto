@@ -15,31 +15,29 @@
    <link rel="stylesheet" tipe="text/css" href="css/pruebacss.css">
 <body>
   <div class="Header">
-
+  
     <a class="Header__logo" href="index.html"><img class="logo" width="#" src="img/logo.jpg"></a>
     
     
     <nav class="Header__menuPrincipal">  
-             <a href="index.html">Home</a>
-              <a href="nosotros.html" target="_blank">Nosotros</a> 
-              <a href="productos.html"target="_blank">Productos</a> 
-              <a href="inspiracion.html"target="_blank">Inspiracion</a>
-              <a href="contacto.html"target="_blank">Contacto</a>
+             <a class="Header__menuPrincipal--1" href="index.html">Home</a>
+              <a class="Header__menuPrincipal--2" href="nosotros.html" target="_blank">Nosotros</a> 
+               <a class="Header__menuPrincipal--3" href="productos.html"target="_blank">Productos</a> 
+             <a class="Header__menuPrincipal--4" href="inspiracion.html"target="_blank">Inspiración</a>
+              <a class="Header__menuPrincipal--5" href="contacto.html"target="_blank">Contacto</a>
             </nav>
-      
 
 
 </div>
-<section>
 
-<article>    
-  <img class="imgHeaderContacto" src="img/ImagenContacto.jpg" alt="ImagenHeaderContacto">
+ 
+  <img class="HeaderContacto__imagen" src="img/ImagenContacto.jpg" alt="ImagenHeaderContacto">
 
   <h1 class="fraseUnoContacto"> —Escribinos! Dejanos tu mensaje o consulta— </h1>
 
 
 
-</article> <br></br>
+<br></br>
 
 
 
@@ -64,7 +62,39 @@
 </div>
 
 
+<div class="row">
+<div class="col-md-6 col-sm-6">  
+<div class="form-group">
+  <label for="exampleFormControlSelect1">Como nos conociste?</label>
+  <select class="form-control" id="exampleFormControlSelect1">
+    <option>Redes Sociales</option>
+    <option>Recomendacion</option>
+    <option>Publicidad Radio</option>
+    <option>Publicidad Via Publica</option>
+    <option>Publicidad TV</option>
+    <option>Otro</option>
 
+  </select>
+</div>
+</div>
+
+
+<div class="col-md-6 col-sm-6">  
+
+<div class="form-group">
+  <label for="exampleFormControlTextarea1">Mensaje</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+</div>
+</div>
+
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+  <label class="form-check-label" for="exampleRadios2">
+    Quiero recibir novedades y promociones de Kunst
+  </label>
+</div>
+<br></br>
 
 
 <button type="button" class="btn btn-light">
@@ -75,62 +105,6 @@
 </div>
 
 
-
-
-<!--
-
-<article>
-    <form class="formularioContacto">
-       
-    
-    <label class="nombre" for="nombre">Nombre: </label>
-    <input class="cnombre"type="text" name="nombre"> </input><br><br>
-    
-    <label class="apellido" for="apellido">Apellido: </label>
-    <input class="capellido"type="text" name="apellido"> <br><br>
-
-    <label class="email" for="email">Email: </label>
-    <input class="cemail" type="email" name="email"> <br><br>
-
-    <label class="sexo" for="sexo">Sexo: </label>
-    <input class="sexoh" type="radio" name="sexo">Hombre
-    <input class="sexom"type="radio" name="sexo">Mujer
-
-    <label class="provincia" for="provincia">Provincia: </label>
-    <select class="cprovincia" name="Provincia">
-        <option value="CABA">CABA</option>
-        <option value="Buenos Aires">Buenos Aires</option>
-        <option value="Neuquen">Neuquen</option>
-        <option value="SantaFe">Santa Fe</option>
-      </select><br><br>
-
-
-      <label class="novedades" for="novdedades">Deseas recibir novedades? </label>
-      <input class="cnovedades" type="checkbox" name="novedades"> <br><br>
-
-
-      <label class="mensaje" for="mensaje">Dejanos tu mensaje: </label>
-    <textarea class="cmensaje" type="text" name="mensaje"> </textarea> <br><br>
-
-
-  
-    </form>    
-
-    <div class="botones">
-  
-      <label class="limpiar" for="limpiar"> </label>
-    <input type="reset" value="Limpiar formulario" name="limpiar"> 
-
-    <label class="enviar" for="enviar"> </label>
-    <input type="submit" value="Enviar formulario" name="enviar"> <br><br>
-  </div>
-
-
-
-</article>
-
-
-</section> -->
   
 <footer class="footer">
      

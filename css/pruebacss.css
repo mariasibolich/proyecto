@@ -1,4 +1,8 @@
+/*---------------LANDING PAGE------------------------*/
 /*---------------HEADER------------------------*/
+.Header {
+  margin-bottom: 15px; }
+
 .Header__logo {
   margin-top: 10px;
   margin-left: 15px; }
@@ -6,31 +10,45 @@
 .Header__menuPrincipal {
   color: #333333;
   font-family: 'Raleway', sans-serif;
-  font-weight: 300;
+  font-weight: 700;
   font-size: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
   float: right;
-  margin-right: 15px;
-  margin-top: 15px;
-  width: 25%;
-  transition: color 1s; }
+  width: 400px;
+  margin-right: 25px; }
 
 .Header__menuPrincipal--1 {
-  color: #333333; }
+  color: #FCD4D2; }
+
+.Header__menuPrincipal--1:hover {
+  color: #999999; }
 
 .Header__menuPrincipal--2 {
   color: #333333; }
 
+.Header__menuPrincipal--2:hover {
+  color: #999999; }
+
 .Header__menuPrincipal--3 {
   color: #333333; }
+
+.Header__menuPrincipal--3:hover {
+  color: #999999; }
 
 .Header__menuPrincipal--4 {
   color: #333333; }
 
+.Header__menuPrincipal--4:hover {
+  color: #999999; }
+
 .Header__menuPrincipal--5 {
   color: #333333; }
+
+.Header__menuPrincipal--4:hover {
+  color: #999999; }
 
 .carrouselHome {
   margin-left: 10px;
@@ -54,8 +72,6 @@
 
 .parrafo {
   margin: 0 50px 60px 40px; }
-  .parrafo .parrafo__imagen {
-    grid-area: Imagen; }
 
 .parrafo__texto {
   color: #333333;
@@ -268,20 +284,22 @@
   grid-template-rows: 1fr 1fr;
   grid-template-columns: 50% 50%;
   grid-column-gap: 20px;
-  grid-row-gap: 50px;
-  grid-template-areas: "fUnoNosotros pUnoNosotros" "pDosNosotros fDosNosotros";
+  grid-row-gap: 0px;
+  grid-template-areas: "fUnoNosotros pUnoNosotros" "IDosNosotros fDosNosotros";
   margin: 60px 120px 0px 120px; }
 
 .TextoNosotros__frase {
   color: #000000;
   font-family: 'Raleway', sans-serif;
   font-size: 250%;
-  font-weight: 700; }
+  font-weight: 700;
+  line-height: 45px; }
 
 .TextoNosotros__frase--1, .TextoNosotros__frase2 {
   grid-area: fUnoNosotros;
   width: 90%;
-  padding: 20px; }
+  padding: 20px;
+  line-height: 45px; }
 
 .TextoNosotros__frase2 {
   grid-area: fDosNosotros; }
@@ -291,14 +309,15 @@
   font-family: 'Raleway', sans-serif;
   font-size: 100%; }
 
-.TextoNosotros__parrafo--1, .TextoNosotros__parrafo--2 {
+.TextoNosotros__parrafo--1 {
   grid-area: pUnoNosotros;
   font-weight: 300;
   margin-top: 0px; }
 
-.TextoNosotros__parrafo--2 {
-  grid-area: pDosNosotros;
-  font-family: 'Raleway', sans-serif; }
+.ImgNosotros__imagen--2 {
+  grid-area: IDosNosotros;
+  margin-top: -30px;
+  border: solid 1px #FCD4D2; }
 
 /*---------------SECCION PRODUCTOS------------------------*/
 .HeaderProductos__imagen {
@@ -643,7 +662,7 @@
     opacity: 1; } }
 
 /*---------------SECCION CONTACTO------------------------*/
-.imgHeaderContacto {
+.HeaderContacto__imagen {
   margin: 15px 15px 15px 15px; }
 
 .fraseUnoContacto {
@@ -657,94 +676,33 @@
   margin-top: 50px;
   margin-bottom: 50px; }
 
-.formularioContacto {
-  color: #000000;
+.form-check {
   font-family: 'Raleway', sans-serif;
-  font-size: 100%;
-  font-weight: 300;
-  width: 800px;
-  display: grid;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px;
-  grid-template-columns: 10% 30% 10% 30%;
-  grid-column-gap: 45px;
-  grid-row-gap: 10px;
-  grid-template-areas: "nom cnom ape cape" "mail cmail cmail cmail" "sex sexh sexm sexm" "prov cprov nov cnov" "msj cmsj cmsj cmsj";
-  margin: 0 30px 20px 280px; }
+  font-size: 15px;
+  color: #999999; }
 
-.nombre {
-  grid-area: nom; }
-
-.cnombre {
-  grid-area: cnom; }
-
-.apellido {
-  grid-area: ape; }
-
-.capellido {
-  grid-area: cape; }
-
-.email {
-  grid-area: mail; }
-
-.cemail {
-  grid-area: cmail; }
-
-.sexo {
-  grid-area: sex; }
-
-.sexoh {
-  grid-area: sexh; }
-
-.sexom {
-  grid-area: sexm; }
-
-.provincia {
-  grid-area: prov; }
-
-.cprovincia {
-  grid-area: cprov; }
-
-.novedades {
-  grid-area: nov; }
-
-.cnovedades {
-  grid-area: cnov; }
-
-.mensaje {
-  grid-area: msj; }
-
-.cmensaje {
-  grid-area: cmsj; }
-
-.botones {
-  color: #000000;
+.btn {
   font-family: 'Raleway', sans-serif;
-  font-size: 100%;
-  font-weight: 300;
-  width: 300px;
-  display: grid;
-  grid-template-rows: 60px;
-  grid-template-columns: 50% 50%;
-  grid-column-gap: 5px;
-  grid-row-gap: 10px;
-  grid-template-areas: "borrar send";
-  justify-items: center;
-  margin-left: 280px;
-  transform: translate(485px, -70px); }
+  color: #697FB7; }
 
-.limpiar {
-  grid-area: borrar; }
+.btn:hover {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  color: #697FB7; }
 
-.enviar {
-  grid-area: send; }
-
+/*---------------MOBILE------------------------*/
 @media (min-width: 375px) and (max-width: 768px) {
-  a {
-    text-decoration: none;
-    background-color: transparent;
-    font-size: 80%; }
+  .Header__logo {
+    margin-left: 180px;
+    margin-bottom: 100px; }
+  .Header__menuPrincipal {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; }
   .primeraCita {
-    font-size: 120%;
+    font-size: 110%;
     font-weight: 700;
     line-height: 80%;
     margin-top: 40px;
@@ -752,7 +710,8 @@
     display: flex;
     flex-direction: column;
     justify-content: left;
-    margin-left: 40px; }
+    margin-left: 30px;
+    line-height: 22px; }
   .primeraCita span {
     color: #000000;
     font-family: 'Raleway', sans-serif;
@@ -760,48 +719,177 @@
     font-weight: 300;
     justify-content: center; }
   .Parrafo {
-    margin: 0 50px 0  50px;
+    margin: 0 50px 0  20px;
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-content: start; }
   .parrafo__imagen {
     height: auto;
-    width: auto;
+    width: 400px;
     margin-bottom: 40px; }
   .parrafo__texto {
     align-items: start;
     transition: color 1s;
     animation-duration: 3s;
-    animation-name: aparecer; }
+    animation-name: aparecer;
+    font-size: 100%;
+    width: 400px;
+    margin-left: 10px; }
   .Imagenes {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-content: start;
-    margin: 0 50px 100px 50px;
+    margin: 0 50px 10px 50px;
     transition: 1s;
     animation-duration: 3s;
     animation-name: aparecer; }
+  .segundaCita {
+    font-size: 250%;
+    margin: 10px 30px 5px 30px; }
+  .container__contactoTitulo {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px; }
+  .form-group {
+    margin-left: 30px;
+    margin-right: 30px; }
+  .btn {
+    margin-left: 30px; }
   .footer__parrafo {
     color: #666666;
     font-size: 110%;
     font-weight: 700;
     font-family: "Cormorant Garamond";
     float: left;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 50px;
     margin-left: 40px; }
   .footer__redes {
     color: #666666;
     font-size: 110%;
     font-weight: 700;
     font-family: "Cormorant Garamond";
-    width: 15%;
-    float: right;
+    width: 50%;
+    float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-top: 100px;
-    margin-bottom: 50px; } }
+    margin-top: 5px;
+    margin-left: 30px; }
+  /*---------------SECCION NOSOTROS MOBILE------------------------*/
+  .HeaderNosotros__Imagen {
+    width: 95%;
+    margin-top: 10px; }
+  .TextoNosotros {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 100%;
+    grid-template-areas: "fUnoNosotros"  "pUnoNosotros" "IDosNosotros" "fDosNosotros";
+    margin: 10px 20px 0px 20px; }
+  .TextoNosotros__frase--1, .TextoNosotros__frase2 {
+    font-size: 85%;
+    margin-top: 5px;
+    margin-bottom: 10px; }
+  .TextoNosotros__parrafo--1 {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 10px; }
+  .ImgNosotros__imagen--2 {
+    width: 90%;
+    margin-top: 10px;
+    border: solid 1px #FCD4D2; }
+  .TextoNosotros__frase--2 {
+    font-size: 85%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-left: 20px; }
+  /*---------------SECCION PRODUCTOS MOBILE------------------------*/
+  .HeaderProductos__imagen {
+    width: 95%;
+    margin-top: 10px; }
+  .HeaderProductos__cita {
+    font-size: 110%;
+    font-weight: 700;
+    line-height: 80%;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    line-height: 12px; }
+  .ImagenesProductos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    margin: 0 50px 10px 50px;
+    transition: 1s;
+    animation-duration: 3s;
+    animation-name: aparecer; }
+  .ImagenesProductos2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-content: start;
+    margin: 0 50px 10px 50px;
+    transition: 1s;
+    animation-duration: 3s;
+    animation-name: aparecer; }
+  /*---------------SECCION INSPIRACION MOBILE------------------------*/
+  .citaInspiracion {
+    font-size: 110%;
+    font-weight: 700;
+    line-height: 80%;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: left;
+    margin-left: 30px;
+    line-height: 22px; }
+  .fraseUnoInspiracion {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    font-size: 180%; }
+  .contenidoInspiracion__bloque1--img1I {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px; }
+  .contenidoInspiracion__bloque2--img2I {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px; }
+  .fraseDosInspiracion {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 70px;
+    font-size: 180%; }
+  .contenidoInspiracion__bloque2--videoI {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 5px; }
+  .contenidoInspiracion__bloque3--img3I {
+    width: 100%;
+    margin-top: 5px;
+    margin-left: 5px; }
+  .contenidoInspiracion__bloque3--frase {
+    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-left: 80px;
+    font-size: 180%; }
+  /*---------------SECCION CONTACTO MOBILE------------------------*/
+  .HeaderContacto__imagen {
+    width: 95%;
+    margin-top: 10px; }
+  .fraseUnoContacto {
+    margin-top: 10px;
+    font-size: 200%;
+    margin-bottom: 5px;
+    margin-left: 60px; }
+  .form-check {
+    margin-left: 30px; } }
